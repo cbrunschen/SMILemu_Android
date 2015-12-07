@@ -1,0 +1,406 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Graphic:
+* .gitignore
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/gradle.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/runConfigurations.xml
+* .idea/vcs.xml
+* _darcs/
+* _darcs/index
+* _darcs/inventory
+* _darcs/patches/
+* _darcs/patches/20060316154758-291b0-b4fa717a87f0d02a2fe2884f2f5882846001376e.gz
+* _darcs/patches/20060929154017-463de-f0b5570e339cfc9d46741ecd9322811fc3fc8369.gz
+* _darcs/patches/20061101070700-463de-d413b8aaebaf9510a75c4503394bacf2f839a281.gz
+* _darcs/patches/20061103181245-463de-0a65fbb573a21d65df42f8020a2759bdc243c11c.gz
+* _darcs/patches/20061109165414-463de-c62a44c58ae13b2b1d3bc596591a01365c50b245.gz
+* _darcs/patches/20070828115947-463de-1d53f03efe3b4066f34d1fe05af7e2279ec763a5.gz
+* _darcs/patches/20070829141147-463de-a564b1608a52477c6a2e61bcba93b80c5420752e.gz
+* _darcs/patches/20071014103459-291b0-6926e8189b2f132d8233446a9d5e7765161b9b0f.gz
+* _darcs/patches/20071014103519-291b0-6fa8125583d3acb36b76d4659d21a3ac0edfc6b6.gz
+* _darcs/patches/pending
+* _darcs/prefs/
+* _darcs/prefs/binaries
+* _darcs/prefs/boring
+* _darcs/prefs/defaultrepo
+* _darcs/prefs/motd
+* _darcs/prefs/repos
+* _darcs/pristine/
+* _darcs/pristine/.classpath
+* _darcs/pristine/.project
+* _darcs/pristine/src/
+* _darcs/pristine/src/se/
+* _darcs/pristine/src/se/lth/
+* _darcs/pristine/src/se/lth/df/
+* _darcs/pristine/src/se/lth/df/cb/
+* _darcs/pristine/src/se/lth/df/cb/graphic/
+* _darcs/pristine/src/se/lth/df/cb/graphic/BooleanValue.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Graphic.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/GraphicComponent.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/HSLColorSpace.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Label.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Light.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/MultiGraphic.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/PaddingGraphic.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/PointyKnob.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/PushButton.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/ScrollableGraphicComponent.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Size.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Solid.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/Util.java
+* _darcs/pristine/src/se/lth/df/cb/graphic/ValueUpdatedListener.java
+* build.gradle
+* gradle.properties
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* lib/
+* lib/.gitignore
+* lib/build.gradle
+* settings.gradle
+From SMILemu:
+* .DS_Store
+* .gitignore
+* .idea/
+* .idea/.name
+* .idea/compiler.xml
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/gradle.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/runConfigurations.xml
+* .idea/vcs.xml
+* _darcs/
+* _darcs/inventory
+* _darcs/patches/
+* _darcs/patches/20060112114857-463de-fc6a870d3457bcae0d12ee84c37539029de512ed.gz
+* _darcs/patches/20060112150835-463de-20fbc1dd8e78f9236e6fbe0fdc639dafcd18f3b7.gz
+* _darcs/patches/20060112151710-463de-ac625407bbbf1c8bb1d2e3e046abf2c2adbb51e3.gz
+* _darcs/patches/20060112151921-463de-1e125b07ec071de24d5213e53f10d878eb383040.gz
+* _darcs/patches/20060112153028-463de-8352767a7b167c425010c5fb776e383c172898de.gz
+* _darcs/patches/20060112154249-463de-eb25bdede0e80403ca3731cfd4bf6e53a89be48e.gz
+* _darcs/patches/20060112154613-463de-7d7867498e15fa07dd26367df39ae93ef47338e0.gz
+* _darcs/patches/20060112161155-463de-7d5e66a8811bf8c6ab1d416ff215e2047ea49c4e.gz
+* _darcs/patches/20060112161239-463de-8d8f692d9bd584e2b51c900ef13977d3035c97c8.gz
+* _darcs/patches/20060112162639-463de-78ae6de8a8d66064170eb892bea3339581c0dc5f.gz
+* _darcs/patches/20060112170049-463de-5a5c86fc3f2bd8e8a5a752fc09457b29265d89db.gz
+* _darcs/patches/20060112170754-463de-7ff0e63ce5c37052174ad6b7833436c9a4945561.gz
+* _darcs/patches/20060112172009-463de-9569000bd4573ca6bab881b3fbfc9e5c0e07ddfb.gz
+* _darcs/patches/20060112172023-463de-c6d79b998315229bb37e0f4b126dd582cb70bd82.gz
+* _darcs/patches/20060112172616-463de-bf92ebf38694b9e914f9371d567b273672f29f24.gz
+* _darcs/patches/20060112205758-3e2bc-ceec3bad99ce010317de6b9c8d051aec744a3a9c.gz
+* _darcs/patches/20060112205827-3e2bc-9cf7b46da590e03811cf548d0cfa505ea59fe67b.gz
+* _darcs/patches/20060112212030-3e2bc-0055ccf3fc002e315fd81c48f603aa84468af6cc.gz
+* _darcs/patches/20060112232557-3e2bc-39f57df419fd3765b70b6da86701cf73696be5e3.gz
+* _darcs/patches/20060112232615-3e2bc-55d3ca4292e32eb43a9215661f3417ab56e51334.gz
+* _darcs/patches/20060112234724-3e2bc-4c440882e33fa1549a5717ee936d9cf58a404571.gz
+* _darcs/patches/20060113105807-463de-793182721413e895172d4a6e8e28964a1bb56d18.gz
+* _darcs/patches/20060113151303-3e2bc-218ccbb37e92cdf3bddc1471c70d6eba278b976d.gz
+* _darcs/patches/20060113151759-3e2bc-af61b65197dd70cf897331ffe1ce2bb92b60fc75.gz
+* _darcs/patches/20060113152117-3e2bc-9da12e613c191eede60d48fc96a52354ea6e8a23.gz
+* _darcs/patches/20060113161320-3e2bc-d3307f66518adcb7ceb01ff2b7c4a2b8c40560f8.gz
+* _darcs/patches/20060115163808-3e2bc-4a7e93a46ffba40b57d3bfe97bce070c718db9e7.gz
+* _darcs/patches/20060115174853-3e2bc-6a4ad853de98e3fcd9124a6dc0990ba7283287f1.gz
+* _darcs/patches/20060115174929-3e2bc-f7cb7729b7bd5ec2d2f3b50711f583637449c62b.gz
+* _darcs/patches/20060115174953-3e2bc-a2f7213f820877e60a54a98add2ca8aa248d1401.gz
+* _darcs/patches/20060115175023-3e2bc-3a18da24656c131f42f3569974befc7a819b3b0f.gz
+* _darcs/patches/20060116080409-3e2bc-fc82282a044ce299ed21efbc5b49e577f333ccda.gz
+* _darcs/patches/20060116081638-3e2bc-cda48cc0a6004f3eb9796c88a1a663162627f2c2.gz
+* _darcs/patches/20060116081828-3e2bc-0ae2ccca7e20bd93eb30f5ea60027ff389dd3755.gz
+* _darcs/patches/20060116110224-3e2bc-c25b6086955c63038b37afe631a753df4709915a.gz
+* _darcs/patches/20060116155028-3e2bc-3a8566fe8199c2c0abf8ad8dee9186fa7c08e9cf.gz
+* _darcs/patches/20060116155057-3e2bc-ab8cd2353fe6a0166850f58618b6955e92d47e64.gz
+* _darcs/patches/20060118122254-3e2bc-1771220c7a2c9e8da5448dc2f49502ee2d56b4cb.gz
+* _darcs/patches/20060118135932-3e2bc-7ca648a28569cc5943c0cd9b8a9488046fa06a06.gz
+* _darcs/patches/20060118155428-3e2bc-975562a6c94bb3073dc0f4459a38d7477cb6c38a.gz
+* _darcs/patches/20060119115831-3e2bc-17ec794df4bf6660e5280c4760c8799dec9a6445.gz
+* _darcs/patches/20060119150433-3e2bc-e7105713df756599d68405fb015bc71fc8a0d133.gz
+* _darcs/patches/20060119150600-3e2bc-118b1eb13f810a2be29dbe48b7a811db43a68934.gz
+* _darcs/patches/20060315171158-3e2bc-6097d71c7f6a8476c4542409a3f5432849c5c14e.gz
+* _darcs/patches/20060316154810-3e2bc-3bd5c8b009380ee74f05ef52ff6a0b62eadbe598.gz
+* _darcs/patches/20060319233426-3e2bc-025d81ce05dc8b8afe06850cd3396a425bca3479.gz
+* _darcs/patches/20060929153618-463de-47bf8bd1b7a696bfa577c7ae568cec237d0bf00d.gz
+* _darcs/patches/20060929153659-463de-5206b4e98ee7ffddb78a04c4ae77132352e6f48c.gz
+* _darcs/patches/20061022100557-463de-80f48fe93bab728bcd6b5e6dc92e4a4131ceba68.gz
+* _darcs/patches/20061022101723-463de-6c06f8f95ac05fee852fa2de06558b7601dfab6e.gz
+* _darcs/patches/20061022102845-463de-3d3cec6845608917309072b9152e08dcbe8eae4c.gz
+* _darcs/patches/20061101070530-3e2bc-6840c6c84d512c2500589647a6a95449db9e1e86.gz
+* _darcs/patches/20061103181546-463de-9852ffc000b78aa3e4f4d63f1144d5204d26b896.gz
+* _darcs/patches/20061109165532-463de-0bab232efb04b17057a4b611be02c38436d527fc.gz
+* _darcs/patches/20061110145822-463de-47866e17e596fb126e63ccb980284e7d342f1463.gz
+* _darcs/patches/20061110145909-463de-16971a9d1094a8df580f51e762482656d0d69e27.gz
+* _darcs/patches/20061110151320-463de-6b17a78e7a9311472809e96cfec1444a1fed77eb.gz
+* _darcs/patches/20061128174156-463de-8ad830f962c6d3065cf4a95b6348d864719f0285.gz
+* _darcs/patches/20070828115758-463de-9abace5f408209c394e6cc0f4fbe06c1a244284c.gz
+* _darcs/patches/20070828115910-463de-8e3ce0fe3978a6591a4fd73a6ec8e8fea71e0704.gz
+* _darcs/patches/20070828152752-463de-55f7a3737642089851a38947a9b7b51e3f70d785.gz
+* _darcs/patches/20070829141215-463de-e4eb6b685c653e4bbb6420208cb4115032c3235a.gz
+* _darcs/patches/20070829155711-463de-aaa6cf290ead16d0ee6340d62780e6019ce503f7.gz
+* _darcs/patches/20070829163026-463de-8c4e632667ab38efd83231ce43dec0db1e525474.gz
+* _darcs/patches/20070829163245-463de-4fbac3671b7edf9ee1816addb273fa33cb1d9218.gz
+* _darcs/patches/20070829164201-463de-1fd71df4b0cb3872a9f1790c500bd4b90af29bc7.gz
+* _darcs/patches/20070829170549-463de-4aa0885f195afe1df35fb0266b161c9a65fb6051.gz
+* _darcs/patches/20070830085142-463de-e546828d83dc1538eed2b4876bc94d116e27e745.gz
+* _darcs/patches/20070830092800-463de-2432477d471426fb95538b7529fe6251af7f8c48.gz
+* _darcs/patches/20070901092856-463de-1a13779cf4d120b3e47a4ea6f436723270b5f4c2.gz
+* _darcs/patches/20070904135020-463de-0a4d435b0329cf2db688d115275b277faf814bc1.gz
+* _darcs/patches/20070904135111-463de-03fcff57d60dbed27d936b0cdabb0935df95bf5d.gz
+* _darcs/patches/20070906093705-463de-d8992b7efb0c7bf59350afab21bfcd314e91cf0b.gz
+* _darcs/patches/20070906120813-463de-e0a6e21d434490c41859af257e52fe5479afecf0.gz
+* _darcs/patches/20070906120854-463de-46a437f94545006860a42f80cc45518a1bace7bc.gz
+* _darcs/patches/20070906135614-463de-972c8f9f0631cfe9dc03c67d10b0c468e2be478c.gz
+* _darcs/patches/20070906141129-463de-792ed147d97817b28f571ae8a18fc7ca8833ce1a.gz
+* _darcs/patches/20070915125328-463de-399d38225a00945a3a90cedf61f48a60ad961b44.gz
+* _darcs/patches/20070915125351-463de-884eb1b4e669383310ec7644a28cb2143c4bc31d.gz
+* _darcs/patches/20070915160307-463de-ba627725db381141226d3f257b02cdba8cf513f2.gz
+* _darcs/patches/pending
+* _darcs/prefs/
+* _darcs/prefs/binaries
+* _darcs/prefs/boring
+* _darcs/prefs/defaultrepo
+* _darcs/prefs/motd
+* _darcs/prefs/repos
+* _darcs/pristine/
+* _darcs/pristine/.classpath
+* _darcs/pristine/.project
+* _darcs/pristine/.settings/
+* _darcs/pristine/.settings/org.eclipse.core.resources.prefs
+* _darcs/pristine/Packaging/
+* _darcs/pristine/Packaging/Icon.gif
+* _darcs/pristine/Packaging/Icon.png
+* _darcs/pristine/Packaging/Icon.ppm
+* _darcs/pristine/Packaging/Icon_alpha.pgm
+* _darcs/pristine/Packaging/Icon_pinkbg.ppm
+* _darcs/pristine/Packaging/Makefile
+* _darcs/pristine/Packaging/SMIL Quick Reference.doc
+* _darcs/pristine/Packaging/applet.html
+* _darcs/pristine/Packaging/gpl.txt
+* _darcs/pristine/Packaging/index.html
+* _darcs/pristine/Packaging/skel.dmg
+* _darcs/pristine/Packaging/template.dmg.bz2
+* _darcs/pristine/Packaging/tmp.pgm
+* _darcs/pristine/SMIL.jardesc
+* _darcs/pristine/resources/
+* _darcs/pristine/resources/gpl.txt
+* _darcs/pristine/resources/se/
+* _darcs/pristine/resources/se/lth/
+* _darcs/pristine/resources/se/lth/df/
+* _darcs/pristine/resources/se/lth/df/cb/
+* _darcs/pristine/resources/se/lth/df/cb/smil/
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/Manual.html
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/QuickStart.html
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/ControlPanel.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/DebugMenu.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/Help.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/HelpMenu.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/LoadStandardTapeMenu.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/Memory.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/Options.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/PulseLabel.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/Registers.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/SaveMemoryToTape.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/TapeMenu.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/TapeReader.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/Typewriter.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/images/WindowsMenu.png
+* _darcs/pristine/resources/se/lth/df/cb/smil/Documentation/style.css
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/A1
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/B2
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/B3
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/DecimalOutput
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/Primes
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/PrintInteger
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/SineWave
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/SquareRootSubroutine
+* _darcs/pristine/resources/se/lth/df/cb/smil/Tapes/SquareRootsMainProgram
+* _darcs/pristine/src/
+* _darcs/pristine/src/se/
+* _darcs/pristine/src/se/lth/
+* _darcs/pristine/src/se/lth/df/
+* _darcs/pristine/src/se/lth/df/cb/
+* _darcs/pristine/src/se/lth/df/cb/smil/
+* _darcs/pristine/src/se/lth/df/cb/smil/Accumulator.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ArPanel.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ArUI.java
+* _darcs/pristine/src/se/lth/df/cb/smil/BitCounter.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ClearRegister.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Clock.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ControlPanel.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Doc.java
+* _darcs/pristine/src/se/lth/df/cb/smil/DocBrowser.java
+* _darcs/pristine/src/se/lth/df/cb/smil/DocumentationEditorKit.java
+* _darcs/pristine/src/se/lth/df/cb/smil/DoubleEditor.java
+* _darcs/pristine/src/se/lth/df/cb/smil/DoubleRenderer.java
+* _darcs/pristine/src/se/lth/df/cb/smil/DrumMemory.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ExtractCallback.java
+* _darcs/pristine/src/se/lth/df/cb/smil/FalseValue.java
+* _darcs/pristine/src/se/lth/df/cb/smil/InverseValue.java
+* _darcs/pristine/src/se/lth/df/cb/smil/IrPanel.java
+* _darcs/pristine/src/se/lth/df/cb/smil/IrUI.java
+* _darcs/pristine/src/se/lth/df/cb/smil/KrPanel.java
+* _darcs/pristine/src/se/lth/df/cb/smil/KrUI.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Memory.java
+* _darcs/pristine/src/se/lth/df/cb/smil/MemoryChangeListener.java
+* _darcs/pristine/src/se/lth/df/cb/smil/MemoryEditor.java
+* _darcs/pristine/src/se/lth/df/cb/smil/MemoryTable.java
+* _darcs/pristine/src/se/lth/df/cb/smil/MemoryTableModel.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Operation.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Processor.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ProgramCounter.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ProgressCallback.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Pulse.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Range.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Register.java
+* _darcs/pristine/src/se/lth/df/cb/smil/RegisterBitIsSet.java
+* _darcs/pristine/src/se/lth/df/cb/smil/RegisterFormatter.java
+* _darcs/pristine/src/se/lth/df/cb/smil/RegisterPanel.java
+* _darcs/pristine/src/se/lth/df/cb/smil/RegisterUI.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SMIL.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SMILApplet.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SaveMemoryToTapeDialog.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SetRegisterBit.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SetRegisterBits.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SlaveClock.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SpringUtilities.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Switch.java
+* _darcs/pristine/src/se/lth/df/cb/smil/SystemClock.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Tape.java
+* _darcs/pristine/src/se/lth/df/cb/smil/TapeReader.java
+* _darcs/pristine/src/se/lth/df/cb/smil/TickClock.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Traceable.java
+* _darcs/pristine/src/se/lth/df/cb/smil/Typewriter.java
+* _darcs/pristine/src/se/lth/df/cb/smil/TypewriterArea.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ValueRegister.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ValueRegisterPanel.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ValueRegisterUI.java
+* _darcs/pristine/src/se/lth/df/cb/smil/ValueSynchronizer.java
+* _darcs/pristine/src/se/lth/df/cb/smil/WordEditor.java
+* _darcs/pristine/src/se/lth/df/cb/smil/graphic/
+* _darcs/pristine/src/se/lth/df/cb/smil/graphic/Clock.java
+* _darcs/pristine/src/se/lth/df/cb/smil/graphic/Speaker.java
+* _darcs/pristine/src/se/lth/df/cb/smil/graphic/TapeReaderGraphic.java
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/CircularByteBuffer.java
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/CircularByteBufferFactory.java
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/ConstantFunction.java
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/DiscreteSampler.java
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/Function.java
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/SineFunction.java
+* _darcs/pristine/src/se/lth/df/cb/smil/sound/SoundGenerator.java
+* _darcs/pristine/testsrc/
+* _darcs/pristine/testsrc/se/
+* _darcs/pristine/testsrc/se/lth/
+* _darcs/pristine/testsrc/se/lth/df/
+* _darcs/pristine/testsrc/se/lth/df/cb/
+* _darcs/pristine/testsrc/se/lth/df/cb/smil/
+* _darcs/pristine/testsrc/se/lth/df/cb/smil/CircularByteBufferTest.java
+* _darcs/pristine/testsrc/se/lth/df/cb/smil/SoundOutputTest.java
+* _darcs/pristine/testsrc/se/lth/df/cb/smil/TestRegister.java
+* _darcs/pristine/testsrc/se/lth/df/cb/smil/TestSMIL.java
+* build.gradle
+* gradle.properties
+* gradle/
+* gradle/wrapper/
+* gradle/wrapper/gradle-wrapper.jar
+* gradle/wrapper/gradle-wrapper.properties
+* gradlew
+* gradlew.bat
+* lib/
+* lib/.gitignore
+* lib/build.gradle
+* settings.gradle
+From SMILemu_Android:
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+appcompat-v7 => [com.android.support:appcompat-v7:19.1.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In Graphic:
+* lib/src/main/java/ => graphic/src/main/java/
+* lib/src/test/java/ => graphic/src/main/java/
+In Graphic_Android:
+* src/ => graphic_Android/src/main/java
+In SMILemu:
+* lib/src/main/java/ => sMILemu/src/main/java/
+* lib/src/test/java/ => sMILemu/src/main/java/
+* resources/ => sMILemu/src/main/java/
+* resources/com/brunschen/christian/smil/Tapes/A1 => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/A1
+* resources/com/brunschen/christian/smil/Tapes/B2 => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/B2
+* resources/com/brunschen/christian/smil/Tapes/B3 => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/B3
+* resources/com/brunschen/christian/smil/Tapes/DecimalOutput => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/DecimalOutput
+* resources/com/brunschen/christian/smil/Tapes/Primes => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/Primes
+* resources/com/brunschen/christian/smil/Tapes/PrintInteger => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/PrintInteger
+* resources/com/brunschen/christian/smil/Tapes/SineWave => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/SineWave
+* resources/com/brunschen/christian/smil/Tapes/SquareRootSubroutine => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/SquareRootSubroutine
+* resources/com/brunschen/christian/smil/Tapes/SquareRootsMainProgram => sMILemu/src/main/resources/com/brunschen/christian/smil/Tapes/SquareRootsMainProgram
+* resources/gpl.txt => sMILemu/src/main/resources/gpl.txt
+In SMILemu_Android:
+* AndroidManifest.xml => sMILemu_Android/src/main/AndroidManifest.xml
+* assets/ => sMILemu_Android/src/main/assets
+* lint.xml => sMILemu_Android/lint.xml
+* res/ => sMILemu_Android/src/main/res/
+* src/ => sMILemu_Android/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

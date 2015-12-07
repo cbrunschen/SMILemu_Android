@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMILemu</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_load_tape">Load Tape</string>
+    <string name="action_remove_tape">Remove Tape</string>
+    
+</resources>

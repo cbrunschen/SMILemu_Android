@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brunschen.christian.smil.TypewriterFragment" >
+
+    <com.brunschen.christian.smil.TypewriterView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8sp"
+        android:paddingRight="8sp"
+        android:scrollHorizontally="true"
+        android:scrollbars="horizontal|vertical"
+        android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:textIsSelectable="true"
+        android:typeface="monospace"
+        />
+</FrameLayout>

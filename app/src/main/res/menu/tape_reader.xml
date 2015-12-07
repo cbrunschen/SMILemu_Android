@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item
+    android:id="@+id/load_tape"
+    android:title="@string/action_load_tape"
+    />
+<item
+    android:id="@+id/remove_tape"
+    android:title="@string/action_remove_tape"
+    />
+</menu>
