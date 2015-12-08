@@ -1,7 +1,7 @@
 include ':graphic'
-project(':graphic').projectDir = new File(settingsDir, '../GraphicLibrary/lib')
-include ':android_graphic'
-project(':android_graphic').projectDir = new File(settingsDir, '../AndroidGraphicLibrary/lib')
-include ':smilemu_library'
-project(':smilemu_library').projectDir = new File(settingsDir, '../SMILemuLibrary/lib')
+project(':graphic').projectDir = new File(settingsDir, '../Graphic/lib')
+include ':graphic_android'
+project(':graphic_android').projectDir = new File(settingsDir, '../Graphic_Android/lib')
+include ':smilemu'
+project(':smilemu').projectDir = new File(settingsDir, '../SMILemu/lib')
 include ':app'

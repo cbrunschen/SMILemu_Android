@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../AndroidGraphicLibrary" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../GraphicLibrary" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Graphic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Graphic_Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Graphic_Android" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../SMILemu" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../SMILEmuLibrary" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>

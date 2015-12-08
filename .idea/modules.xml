@@ -4,9 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SMILEmuApp.iml" filepath="$PROJECT_DIR$/SMILEmuApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/SMILemu_Android.iml" filepath="$PROJECT_DIR$/SMILemu_Android.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../AndroidGraphicLibrary/lib/android_graphic.iml" filepath="$PROJECT_DIR$/../AndroidGraphicLibrary/lib/android_graphic.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../GraphicLibrary/lib/graphic.iml" filepath="$PROJECT_DIR$/../GraphicLibrary/lib/graphic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Graphic/lib/graphic.iml" filepath="$PROJECT_DIR$/../Graphic/lib/graphic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Graphic_Android/lib/graphic_android.iml" filepath="$PROJECT_DIR$/../Graphic_Android/lib/graphic_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SMILemu/lib/smilemu.iml" filepath="$PROJECT_DIR$/../SMILemu/lib/smilemu.iml" />
       <module fileurl="file://$PROJECT_DIR$/../SMILEmuLibrary/lib/smilemu_library.iml" filepath="$PROJECT_DIR$/../SMILEmuLibrary/lib/smilemu_library.iml" />
     </modules>
   </component>
