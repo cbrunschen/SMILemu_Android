@@ -5,5 +5,9 @@
     <string name="action_settings">Settings</string>
     <string name="action_load_tape">Load Tape</string>
     <string name="action_remove_tape">Remove Tape</string>
-    
+
+    <string name="tab_control_panel">Control Panel</string>
+    <string name="tab_tape_reader">Tape Reader</string>
+    <string name="tab_typewriter">Typewriter</string>
+
 </resources>

@@ -8,9 +8,9 @@
         <option name="gradleJvm" value="1.7" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../Graphic/lib" />
-            <option value="$PROJECT_DIR$/../Graphic_Android/lib" />
-            <option value="$PROJECT_DIR$/../SMILemu/lib" />
+            <option value="$PROJECT_DIR$/../Graphic/graphic" />
+            <option value="$PROJECT_DIR$/../Graphic_Android/graphic_android" />
+            <option value="$PROJECT_DIR$/../SMILemu/smilemu" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
           </set>

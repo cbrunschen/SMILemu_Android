@@ -1,15 +1,19 @@
 package com.brunschen.christian.smil;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.Layout;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class TypewriterFragment extends Fragment implements ListenableTypewriter.Listener {
+public class TypewriterFragment extends NonInterceptingFragment
+    implements ListenableTypewriter.Listener {
   private static final String TAG = TypewriterFragment.class.getSimpleName();
   
   private boolean focusable = true;
@@ -21,19 +25,23 @@ public class TypewriterFragment extends Fragment implements ListenableTypewriter
     super.onCreate(savedState);
     setHasOptionsMenu(true);
   }
-  
+
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     super.onCreateView(inflater, container, savedInstanceState);
     View view = inflater.inflate(R.layout.fragment_typewriter, container, false);
     typewriterView = (TypewriterView) view.findViewById(R.id.text_view);
-    typewriterView.setTextIsSelectable(focusable);
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+      typewriterView.setTextIsSelectable(focusable);
+    }
     typewriterView.setMovementMethod(ScrollingMovementMethod.getInstance());
     typewriterView.setHeadPositionListener(new TypewriterView.HeadPositionListener() {
-      @Override public void onHeadPosition(final float x, final float y) {
+      @Override
+      public void onHeadPosition(final float x, final float y) {
         typewriterView.postDelayed(new Runnable() {
-          @Override public void run() {
-            Log.i(TAG, String.format("scrolling to %f, %f", x,  y));
+          @Override
+          public void run() {
+            Log.i(TAG, String.format("scrolling to %f, %f", x, y));
             Layout layout = typewriterView.getLayout();
             float xFrag = x / layout.getWidth();
             float yFrag = y / layout.getHeight();
@@ -48,7 +56,7 @@ public class TypewriterFragment extends Fragment implements ListenableTypewriter
     typewriter = (ListenableTypewriter) ((MainActivity) getActivity()).getSmil().typewriter();
     typewriterView.setText(typewriter.text());
     typewriter.setListener(this);
-    
+
     return view;
   }
   

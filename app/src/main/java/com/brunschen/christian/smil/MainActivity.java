@@ -1,20 +1,23 @@
 package com.brunschen.christian.smil;
 
-import android.app.ActionBar;
-import android.app.FragmentTransaction;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 
 import com.brunschen.christian.graphic.android.AndroidFont;
 import com.brunschen.christian.smil.sound.SoundGenerator;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
   private SMIL smil;
 
   private ControlPanelFragment controlPanelFragment;
@@ -25,10 +28,10 @@ public class MainActivity extends ActionBarActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    final ActionBar actionBar = getActionBar();
-    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
     setContentView(R.layout.activity_main);
+
+    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    setSupportActionBar(toolbar);
 
     final AndroidFont f = new AndroidFont(Typeface.MONOSPACE, 10);
     final ControlPanel cp = new ControlPanel(f, f);
@@ -40,10 +43,22 @@ public class MainActivity extends ActionBarActivity {
     tapeReader.setTape(SMIL.tape("A1"));
     smil.setTapeReader(tapeReader);
     smil.setSoundGenerator(new SoundGenerator() {
-      @Override public void stopDestination(boolean finishPlaying, boolean retainData) { }
-      @Override public void startDestination() { }
-      @Override public void pushBufferToDestination() { }
-      @Override public boolean canGenerateSound() { return false; }
+      @Override
+      public void stopDestination(boolean finishPlaying, boolean retainData) {
+      }
+
+      @Override
+      public void startDestination() {
+      }
+
+      @Override
+      public void pushBufferToDestination() {
+      }
+
+      @Override
+      public boolean canGenerateSound() {
+        return false;
+      }
     });
     smil.setTypewriter(new ListenableTypewriter());
 
@@ -52,30 +67,34 @@ public class MainActivity extends ActionBarActivity {
     typewriterFragment = new TypewriterFragment();
 
     smil.init();
-    
-    // Create a tab listener that is called when the user changes tabs.
-    ActionBar.TabListener tabListener = new ActionBar.TabListener() {
-      public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
-        switch (tab.getPosition()) {
-        case 0:
-          getSupportFragmentManager().beginTransaction().replace(R.id.container, controlPanelFragment).commit();
-          break;
-        case 1:
-          getSupportFragmentManager().beginTransaction().replace(R.id.container, tapeReaderFragement).commit();
-          break;
-        case 2:
-          getSupportFragmentManager().beginTransaction().replace(R.id.container, typewriterFragment).commit();
-          break;
-        }
-      }
 
-      public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) { }
-      public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) { }
+    ViewPager pager = (ViewPager) findViewById(R.id.pager);
+    pager.setAdapter(new FragmentsAdapter(getSupportFragmentManager()));
+
+    TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+    tabLayout.setupWithViewPager(pager);
+  }
+
+  @Override
+  protected void onResume() {
+    super.onResume();
+    View.OnTouchListener onTouchListener = new View.OnTouchListener() {
+      @Override
+      public boolean onTouch(View v, MotionEvent event) {
+        switch (event.getAction()) {
+          case MotionEvent.ACTION_DOWN:
+          case MotionEvent.ACTION_POINTER_DOWN:
+          case MotionEvent.ACTION_MOVE:
+            v.getParent().requestDisallowInterceptTouchEvent(true);
+            break;
+          case MotionEvent.ACTION_UP:
+          case MotionEvent.ACTION_CANCEL:
+            v.getParent().requestDisallowInterceptTouchEvent(false);
+            break;
+        }
+        return false;
+      }
     };
-    
-    actionBar.addTab(actionBar.newTab().setText("Control Panel").setTabListener(tabListener));
-    actionBar.addTab(actionBar.newTab().setText("Tape Reader").setTabListener(tabListener));
-    actionBar.addTab(actionBar.newTab().setText("Typewriter").setTabListener(tabListener));
   }
 
   @Override
@@ -102,7 +121,7 @@ public class MainActivity extends ActionBarActivity {
     return smil;
   }
 
-  public class FragmentsAdapter extends FragmentStatePagerAdapter {
+  public class FragmentsAdapter extends FragmentPagerAdapter {
     public FragmentsAdapter(FragmentManager fm) {
       super(fm);
     }

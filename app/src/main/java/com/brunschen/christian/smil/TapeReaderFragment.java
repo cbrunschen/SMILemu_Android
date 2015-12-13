@@ -11,23 +11,19 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.brunschen.christian.graphic.android.GraphicView;
 
-public class TapeReaderFragment extends Fragment {
+public class TapeReaderFragment extends NonInterceptingFragment {
   
   private GraphicView graphicView;
   private GraphicView.GraphicPosition graphicPosition;
   private TapeReader tapeReader;
 
   public TapeReaderFragment() {
-  }
-
-  @Override
-  public void onAttach(Activity activity) {
-    super.onAttach(activity);
   }
 
   @Override
@@ -42,6 +38,25 @@ public class TapeReaderFragment extends Fragment {
     tapeReader = ((MainActivity) getActivity()).getSmil().tapeReader();
     graphicView.setLastGraphicPosition(graphicPosition);
     graphicView.setGraphic(tapeReader.graphic());
+
+    graphicView.setOnTouchListener(new View.OnTouchListener() {
+      @Override
+      public boolean onTouch(View v, MotionEvent event) {
+        switch (event.getAction()) {
+          case MotionEvent.ACTION_DOWN:
+          case MotionEvent.ACTION_POINTER_DOWN:
+          case MotionEvent.ACTION_MOVE:
+            v.getParent().requestDisallowInterceptTouchEvent(true);
+            break;
+          case MotionEvent.ACTION_UP:
+          case MotionEvent.ACTION_CANCEL:
+            v.getParent().requestDisallowInterceptTouchEvent(false);
+            break;
+        }
+        return false;
+      }
+    });
+
     return graphicView;
   }
 
@@ -83,7 +98,7 @@ public class TapeReaderFragment extends Fragment {
     super.onDestroy();
   }
   
-  private class TapesFragment extends DialogFragment {
+  public class TapesFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
       AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
