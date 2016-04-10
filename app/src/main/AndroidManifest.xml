@@ -6,7 +6,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:hardwareAccelerated="false"
@@ -14,7 +14,9 @@
         <activity
             android:name="com.brunschen.christian.smil.MainActivity"
             android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="userLandscape"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
